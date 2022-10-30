@@ -1,18 +1,21 @@
 import Head from 'next/head'
 import Header from '@components/Header'
+// import bg from './wp.jpg';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" style={{
+      backgroundImage: `url(/wp.jpg)`
+    }}>
       <Head>
-        <title>Great things cooming soon!</title>
+        <title>Our Wedding</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Great things cooming soon!" />
+        <Header title="Our wedding" />
         <p className="description">
-          Stay tune
+          Great things cooming soon! Stay tune
         </p>
       </main>
     </div>
